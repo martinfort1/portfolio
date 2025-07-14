@@ -48,7 +48,7 @@ export default function Intro() {
             </div>
         </div>
         {/* Sección de texto */}
-        <motion.p className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5]'
+        <motion.h1 className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5]'
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -61,7 +61,7 @@ export default function Intro() {
           <span className='font-bold'> 
             React, Node.js, Express, Next.js, TypeScript, and Tailwind CSS. 
           </span>{" "}
-        </motion.p>
+        </motion.h1>
         {/* Sección de botones */}
         <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 font-medium sm:gap-6'
           initial={{ opacity: 0, y: 100 }}
