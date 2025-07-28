@@ -4,7 +4,7 @@ import SectionHeading from './SectionHeading'
 import { motion } from 'framer-motion'
 export default function About() {
   return (
-    <motion.section className='mb-28 max-w-[45rem] text-center leading-8 sm:mb-40'
+    <motion.section className='max-w-[45rem] text-center leading-8'
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2 }}
@@ -22,7 +22,6 @@ export default function About() {
             to stay up-to-date with the latest trends in the industry. I’m currently looking for opportunities to 
             contribute to impactful projects, collaborate with great teams, and <span className='font-semibold'>grow</span> both professionally and personally.
         </p>
-
     </motion.section>
   )
 }
