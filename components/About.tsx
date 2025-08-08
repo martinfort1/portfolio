@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import SectionHeading from './SectionHeading'
+import SectionHeading from './sectionHeading'
 import { motion } from 'framer-motion'
 import { useSectionInView } from '@/lib/hooks';
 export default function About() {

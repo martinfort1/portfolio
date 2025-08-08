@@ -1,16 +1,16 @@
 "use client";
 
 import React, { useEffect } from 'react'
-import SectionHeading from './SectionHeading'
+import SectionHeading from './sectionHeading'
 import { projectsData } from '@/lib/data'
-import Project from './Project'
+import Project from './project'
 import { useSectionInView } from '@/lib/hooks';
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);
 
   return (
-    <section ref={ref} className='scroll-mt-28' id='projects'>
+    <section ref={ref} className='scroll-mt-28 mb-28' id='projects'>
       <SectionHeading>Projects</SectionHeading>
       <div>
         {
