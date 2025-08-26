@@ -38,26 +38,26 @@ export const experiencesData = [
     title: "Universidad Santo Tomas de Aquino",
     location: "Tucumán, Argentina",
     description:
-      "I graduated after 3 years. I learned the basics of programming, algorithms, data structures, and web development.",
+      "I graduated after 3 years. I learned about programming, algorithms, data structures, and web development.",
     icon: React.createElement(LuGraduationCap),
     date: "2022 - 2024",
+  },
+    {
+    title: "Host at Edgewood Tahoe Resort",
+    location: "South Lake Tahoe, CA, USA",
+    description:
+        "I practiced my English and learned how to work in a team. I also learned how to work under pressure and provide excellent customer service.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - 2024",
   },
   {
     title: "Freelance Full-Stack Developer",
     location: "Remote - Argentina",
     description:
       "I worked as a freelance full-stack developer for 6 months until the project was completed. My first professional experience as a developer.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2025 - 2025",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
-  },
+    date: "2025",
+  }
 ] as const;
 
 export const projectsData = [
