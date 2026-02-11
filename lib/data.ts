@@ -75,7 +75,7 @@ export const projectsData = [
       "Web platform designed to support local foundations by giving them visibility and showcasing their current needs",
     tags: ["JavaScript", "React", "Jest", "Bootstrap", "MongoDB", "Express", "Node.js"],
     imageUrl: donarImg,
-    siteUrl: "https://don-ar.com",
+    siteUrl: "https://proyecto-final-three-navy.vercel.app/",
   },
   {
     title: "Word Analytics",

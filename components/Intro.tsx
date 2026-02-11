@@ -8,9 +8,11 @@ import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section ref={ref} id='home' className='mt-[7rem] sm:mt-[5.5rem] mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt[100rem] scroll-mt-[100rem]'>
@@ -74,23 +76,27 @@ export default function Intro() {
           <Link href="#contact"
             className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
             focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
+            onClick={ () => {
+              setActiveSection("Contact");
+              setTimeOfLastClick(Date.now());
+            }}
           >
             Contact me! <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
           </Link>
 
           <a className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
             focus:scale-110 hover:scale-110 hover:bg-gray-100 active:scale-105 transition 
-            cursor-pointer border border-black/10' href='/CV.pdf' download={true}>Download CV <HiDownload className='opacity-60 group-hover:translate-x-1 group-hover:scale-120 transition'/></a>
+            cursor-pointer borderBlack' href='/CV.pdf' download={true}>Download CV <HiDownload className='opacity-60 group-hover:translate-x-1 group-hover:scale-120 transition'/></a>
 
           <a  className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-130 hover:text-gray-950 hover:bg-gray-100 active:scale-105 transition 
-            cursor-pointer border border-black/10'
+            cursor-pointer borderBlack'
             href='https://www.linkedin.com/in/martin-fort-74b1aa235/'
             target='_blank'>
             <BsLinkedin />
           </a>
 
           <a  className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.20rem] focus:scale-120 hover:scale-130 hover:bg-gray-100 hover:text-gray-950 active:scale-105 transition 
-            cursor-pointer border border-black/10'
+            cursor-pointer borderBlack'
             href='https://github.com/martinfort1'
             target='_blank'>
             <FaGithubSquare />
