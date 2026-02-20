@@ -34,7 +34,7 @@ export default function Intro() {
                   height="192"
                   quality={100}
                   priority={true} 
-                  className='h-24 w-24 rounded-full object-cover border-[0.30rem] border-white shadow-x1'
+                  className='h-24 w-24 rounded-full object-cover border-[0.20rem] border-white shadow-x1 dark:border-gray-950'
                 />
                 </motion.div>
                 
@@ -86,17 +86,17 @@ export default function Intro() {
 
           <a className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
             focus:scale-110 hover:scale-110 hover:bg-gray-100 active:scale-105 transition 
-            cursor-pointer borderBlack' href='/CV.pdf' download={true}>Download CV <HiDownload className='opacity-60 group-hover:translate-x-1 group-hover:scale-120 transition'/></a>
+            cursor-pointer borderBlack dark:bg-white/20 dark:text-white/80 dark:hover:text-gray-700' href='/CV.pdf' download={true}>Download CV <HiDownload className='opacity-60 group-hover:translate-x-1 group-hover:scale-120 transition'/></a>
 
           <a  className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-130 hover:text-gray-950 hover:bg-gray-100 active:scale-105 transition 
-            cursor-pointer borderBlack'
+            cursor-pointer borderBlack dark:bg-white/10 dark:text-white/80'
             href='https://www.linkedin.com/in/martin-fort-74b1aa235/'
             target='_blank'>
             <BsLinkedin />
           </a>
 
           <a  className='bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.20rem] focus:scale-120 hover:scale-130 hover:bg-gray-100 hover:text-gray-950 active:scale-105 transition 
-            cursor-pointer borderBlack'
+            cursor-pointer borderBlack dark:bg-white/10 dark:text-white/80'
             href='https://github.com/martinfort1'
             target='_blank'>
             <FaGithubSquare />

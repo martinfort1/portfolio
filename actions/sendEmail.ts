@@ -12,8 +12,6 @@ import { ContactFormEmail } from "@/email/contact-form-email";
     const senderEmail = formData.get('senderEmail');
     const message = formData.get('message');
 
-    console.log('sendEmail called with:', { senderEmail, message });
-
     if( !validateString(senderEmail, 500) ){
       console.error('Email validation failed');
       return {
@@ -34,14 +32,12 @@ import { ContactFormEmail } from "@/email/contact-form-email";
           replyTo: senderEmail as string,
           react: ContactFormEmail({ message: message as string, senderEmail: senderEmail as string })
       });
-      console.log('Email sent successfully:', data);
       return {
         data,
         error: null
       };
     } catch (error: unknown) {
       const errorMessage = getErrorMessage(error);
-      console.error('Email sending error:', errorMessage);
       return {
         error: errorMessage,
         data: null
