@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import SectionHeading from './sectionHeading'
+import SectionHeading  from './SectionHeading';
 import { motion } from 'framer-motion'
 import { useSectionInView } from '@/lib/hooks';
 export default function About() {
@@ -17,7 +17,7 @@ export default function About() {
     >
         <SectionHeading>Get to know me</SectionHeading>
         <p className='mb-3 text-lg'>
-            I’m Martín Fort, a full-stack web developer based in <span className='font-extrabold'>Tucuman, Argentina. </span>
+            I&apos;m Martín Fort, a full-stack web developer based in <span className='font-extrabold'>Tucuman, Argentina. </span>
             I possess a strong foundation in both front-end and back-end technologies. 
             After graduating as a technician in Software Development and Quality Control from the <span className='font-bold'>Universidad Nacional 
             de Santo Tomás de Aquino</span>, I’ve dedicated myself to building <span className='italic'>dynamic, responsive, and user-friendly </span> 

@@ -29,7 +29,7 @@ export default function Intro() {
               >
                 <Image
                   src={"/martin.jpg"}
-                  alt="Martin's portrait"
+                  alt="Picture of Martin"
                   width="192"
                   height="192"
                   quality={100}
@@ -58,7 +58,7 @@ export default function Intro() {
           animate={{ opacity: 1, y: 0 }}
         >
           <span className='font-bold'>Hello! </span> My name is  
-          <span className='font-bold'> Martín.</span> I'm a {" "}
+          <span className='font-bold'> Martín.</span> I am a {" "}
           <span className='font-bold'>full-stack developer</span> with a 
           passion for creating {" "}
           <span className='font-bold italic'> dynamic and responsive</span>{" "} web applications.
