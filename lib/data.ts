@@ -2,9 +2,14 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { HiOutlineWrenchScrewdriver } from "react-icons/hi2";
 import komukImg from "@/public/komuk.png";
 import donarImg from "@/public/donar.png";
+import portfolioImg from "@/public/portfolio.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
+import { HiOutlineRocketLaunch } from "react-icons/hi2";
+import { MdOutlineExplore } from "react-icons/md";
+import { TbTargetArrow } from "react-icons/tb";
 
 export const links = [
   {
@@ -57,7 +62,23 @@ export const experiencesData = [
       "I worked as a freelance full-stack developer for 6 months until the project was completed. My first professional experience as a developer.",
     icon: React.createElement(FaReact),
     date: "2025",
-  }
+  },
+  {
+    title: "Manager at Poultry House",
+    location: "Villa Padre Monti, Tucumán, Argentina",
+    description:
+        "I helped consolidate and manage a poultry house, improving workflows, solving day-to-day problems, and coordinating tasks which strengthened my problem-solving and soft skills.",
+    icon: React.createElement(HiOutlineWrenchScrewdriver),
+    date: "2025 - 2026",
+  },
+  {
+  title: "Next Step —> Junior Back-End Developer",
+  location: "Seeking new opportunities",
+  description:
+    "Looking for my next opportunity as a Backend Developer, where I can build reliable systems, keep learning, and contribute to real products.",
+  icon: React.createElement(HiOutlineRocketLaunch),
+  date: "Coming soon!",
+}
 ] as const;
 
 export const projectsData = [
@@ -78,12 +99,12 @@ export const projectsData = [
     siteUrl: "https://proyecto-final-three-navy.vercel.app/",
   },
   {
-    title: "Word Analytics",
+    title: "This portfolio!",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: donarImg,
-    siteUrl: "https://don-ar.com",
+      "A public web app to showcase my projects, experience, and skills. Click to see the code and learn how I built it!",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+    imageUrl: portfolioImg,
+    siteUrl: "https://github.com/martinfort1/portfolio",
   },
 ] as const;
 
