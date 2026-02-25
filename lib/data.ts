@@ -6,6 +6,7 @@ import { HiOutlineWrenchScrewdriver } from "react-icons/hi2";
 import komukImg from "@/public/komuk.png";
 import donarImg from "@/public/donar.png";
 import portfolioImg from "@/public/portfolio.png";
+import calendarApp from "@/public/calendarApp.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { MdOutlineExplore } from "react-icons/md";
@@ -97,6 +98,14 @@ export const projectsData = [
     tags: ["JavaScript", "React", "Jest", "Bootstrap", "MongoDB", "Express", "Node.js"],
     imageUrl: donarImg,
     siteUrl: "https://proyecto-final-three-navy.vercel.app/",
+  },
+  {
+    title: "React Calendar App",
+    description:
+    "A calendar application that allows users to manage events. If you want to use it, just clone the repo and run it locally!",
+    tags: ["React", "JavaScript", "CSS", "MongoDB", "Express", "Node.js", "JWT", "Mongoose", "REST API"],
+    imageUrl: calendarApp,
+    siteUrl: "https://github.com/martinfort1/React-Calendar",
   },
   {
     title: "This portfolio!",
