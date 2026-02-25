@@ -6,7 +6,7 @@ import { HiOutlineWrenchScrewdriver } from "react-icons/hi2";
 import komukImg from "@/public/komuk.png";
 import donarImg from "@/public/donar.png";
 import portfolioImg from "@/public/portfolio.png";
-import calendarApp from "@/public/calendarApp.png";
+import calendarApp from "@/public/CalendarApp.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { MdOutlineExplore } from "react-icons/md";
