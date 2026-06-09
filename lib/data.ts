@@ -6,11 +6,9 @@ import { HiOutlineWrenchScrewdriver } from "react-icons/hi2";
 import komukImg from "@/public/komuk.png";
 import donarImg from "@/public/donar.png";
 import portfolioImg from "@/public/portfolio.png";
+import EggTrackImg from "@/public/eggTrack.png";
 import calendarApp from "@/public/CalendarApp.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
-import { MdOutlineExplore } from "react-icons/md";
-import { TbTargetArrow } from "react-icons/tb";
 
 export const links = [
   {
@@ -83,11 +81,19 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+    {
+    title: "EggTrack",
+    description:
+      "A full-stack management platform for poultry farms, enabling real-time tracking of production, finances and operations.",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Zod","Prisma ORM", "PostgreSQL", "Framer Motion", "Recharts",  ],
+    imageUrl: EggTrackImg,
+    siteUrl: "https://eggtrack.vercel.app/",
+  },
   {
     title: "Komuk",
     description:
       "E-commerce platform for customizable promotional products with corporate branding.",
-    tags: ["React", "Next.js", "TypeScript", "shadcn", "Tailwind", "Zod", "Zustand","Drizzle ORM", "PostgreSQL", "AWS S3"],
+    tags: ["React", "Next.js", "TypeScript", "shadcn", "Tailwind", "Zod|", "Zustand","Drizzle ORM", "PostgreSQL", "AWS S3"],
     imageUrl: komukImg,
     siteUrl: "https://www.komuk.com.ar",
   },
